@@ -9,8 +9,6 @@ import java.util.List;
 public class TeacherSubject implements Subject{
     //用来存放和记录观察者
     private List<Observer> observers=new ArrayList<Observer>();
-    //记录状态的字符串
-    private String info;
     @Override
     public void registerObserver(Observer obj) {
         observers.add(obj);
